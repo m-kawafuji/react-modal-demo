@@ -1,0 +1,59 @@
+.container {
+  padding: 2rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.description {
+  margin-top: 1rem;
+}
+
+.formContainer {
+  margin-top: 1rem;
+
+  > * + * {
+    margin-top: 1rem;
+  }
+}
+
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldLabel {
+  align-self: flex-start;
+  font-weight: 500;
+}
+
+.fieldInput {
+  margin-top: 0.5rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+  > * + * {
+    margin-left: 1rem;
+  }
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-width: 0;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.cancel {
+  composes: button;
+  background-color: #f00;
+}
+
+.submit {
+  composes: button;
+  background-color: #00f;
+}
